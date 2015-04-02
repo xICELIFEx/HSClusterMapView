@@ -1,0 +1,11 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'HSClusterMapView', :exclusive => true do
+  pod "HSClusterMapView", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "HSClusterMapView", :path => "../"
+
+  
+end
