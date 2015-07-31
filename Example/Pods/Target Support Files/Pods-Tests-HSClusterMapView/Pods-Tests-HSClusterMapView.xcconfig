@@ -1,0 +1,1 @@
+PODS_TESTS_HSCLUSTERMAPVIEW_OTHER_LDFLAGS = -framework "GoogleMaps" -framework "MapKit" -framework "UIKit"

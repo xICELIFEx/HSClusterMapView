@@ -1,0 +1,5 @@
+#include "Pods-HSClusterMapView-HSClusterMapView.xcconfig"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Build" "${PODS_ROOT}/Headers/Build/HSClusterMapView" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/HSClusterMapView"
+OTHER_LDFLAGS = ${PODS_HSCLUSTERMAPVIEW_HSCLUSTERMAPVIEW_OTHER_LDFLAGS} -ObjC
+PODS_ROOT = ${SRCROOT}
