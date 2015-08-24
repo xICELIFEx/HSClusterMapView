@@ -1,14 +1,16 @@
 # HSClusterMapView
 
-[![Version](https://img.shields.io/cocoapods/v/HSClusterMapView.svg?style=flat)](http://cocoapods.org/pods/HSClusterMapView)
-[![License](https://img.shields.io/cocoapods/l/HSClusterMapView.svg?style=flat)](http://cocoapods.org/pods/HSClusterMapView)
-[![Platform](https://img.shields.io/cocoapods/p/HSClusterMapView.svg?style=flat)](http://cocoapods.org/pods/HSClusterMapView)
+## Description
+
+HSClusterMapView is a subclass of GMSMapView (Google iOS SDK Map) which clusters groups of GMSMarkers and replaces them with a single GMSMarker, enabling the developer to generate a custom UIImage for each cluster marker on the fly. 
+
+Also included is a GMSMapView subclass, HSMapView, which will keep track of the markers on the GMSMapView for the developer. This is unlike the stock GMSMapView, which forces the developer to keep the GMSMarker objects they want to show on the map in data structure external to GMSMapView.
+
+HSClusterMapView and HSMapView aim to provide clean map interfaces to work with the Google Maps for iOS SDK.
 
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
 
 ## Installation
 
