@@ -8,10 +8,6 @@ Also included is a GMSMapView subclass, HSMapView, which will keep track of the 
 
 HSClusterMapView and HSMapView aim to provide clean map interfaces to work with the Google Maps for iOS SDK.
 
-## Requirements
-
-Include the Google Maps for iOS SDK in the same project as HSClusterMapView.
-
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
