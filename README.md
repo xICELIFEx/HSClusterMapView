@@ -11,7 +11,8 @@ Also included is a GMSMapView subclass, HSMapView, which will keep track of the 
 HSClusterMapView and HSMapView aim to provide more cohesive and full featured interfaces to work with the Google Maps for iOS SDK.
 
 ## Example
-![alt tag](https://www.github.com/hotschedules/HSClusterMapView/raw/master/example.gif)
+![alt tag](https://www.github.com/hotschedules/HSClusterMapView/raw/master/example.gif)  
+
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Basic Usage
