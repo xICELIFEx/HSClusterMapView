@@ -59,7 +59,7 @@
 -(void)sharedInit {
     _clusterMarkers = [NSMutableSet new];
     _clusterSize = 0.2;
-    _minimumMarkerCountPerCluster = 6;
+    _minimumMarkerCountPerCluster = 3;
     _clusteringEnabled = YES;
 }
 

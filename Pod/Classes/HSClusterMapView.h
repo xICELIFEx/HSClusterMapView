@@ -31,7 +31,7 @@
 
 /**
  * The minimum amount of markers required to form a cluster.
- * Defaults to 0.
+ * Defaults to 3.
  */
 @property (nonatomic, assign) NSUInteger minimumMarkerCountPerCluster;
 

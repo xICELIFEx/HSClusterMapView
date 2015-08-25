@@ -1,25 +1,90 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5023" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="gLj-do-JhO">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <!--HSClusterMapView Demo-->
+        <scene sceneID="2dW-jZ-YCC">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="HSViewController" sceneMemberID="viewController">
+                <viewController id="2Su-xy-Llc" customClass="HSClusterMapViewDemoViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="QxG-yf-qDt"/>
+                        <viewControllerLayoutGuide type="bottom" id="Arw-0U-EV9"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                    <view key="view" contentMode="scaleToFill" id="c6D-KH-deb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JHZ-zp-XJ2">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="mZy-4z-M7d"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="Enable Clustering" id="iur-eq-wAY">
+                                        <connections>
+                                            <action selector="toggleClusteringButtonPressed:" destination="2Su-xy-Llc" id="eN1-f3-YLw"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="KT0-eg-EOx"/>
+                                    <barButtonItem title="Recluster" id="WM7-51-u1y">
+                                        <connections>
+                                            <action selector="reclusterButtonPressed:" destination="2Su-xy-Llc" id="3oz-lG-oKs"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="1Fk-AI-paD"/>
+                                    <barButtonItem title="Clear" id="qkM-km-5XP">
+                                        <connections>
+                                            <action selector="clearButtonPressed:" destination="2Su-xy-Llc" id="pWd-Cv-Cjn"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to add markers" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CnM-f1-CSy">
+                                <rect key="frame" x="84.5" y="274" width="152.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Arw-0U-EV9" firstAttribute="top" secondItem="JHZ-zp-XJ2" secondAttribute="bottom" id="1dt-R1-Nmb"/>
+                            <constraint firstAttribute="centerY" secondItem="CnM-f1-CSy" secondAttribute="centerY" id="3Yd-ib-4BJ"/>
+                            <constraint firstAttribute="centerX" secondItem="CnM-f1-CSy" secondAttribute="centerX" id="4Bd-hx-tcF"/>
+                            <constraint firstItem="JHZ-zp-XJ2" firstAttribute="leading" secondItem="c6D-KH-deb" secondAttribute="leading" id="H7l-zz-0WG"/>
+                            <constraint firstAttribute="trailing" secondItem="JHZ-zp-XJ2" secondAttribute="trailing" id="ylc-1u-5bO"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="HSClusterMapView Demo" id="foe-xV-d1k"/>
+                    <connections>
+                        <outlet property="instructionLabel" destination="CnM-f1-CSy" id="ni4-lG-sbs"/>
+                        <outlet property="reclusterButton" destination="WM7-51-u1y" id="BBF-nr-rKP"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7qc-CZ-4yZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="614" y="413"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="KYW-ON-xe9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gLj-do-JhO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ogH-iV-TWW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2Su-xy-Llc" kind="relationship" relationship="rootViewController" id="O3d-ov-Lfz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SjV-PB-Wve" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="169" y="413"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
