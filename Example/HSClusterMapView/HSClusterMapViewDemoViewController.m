@@ -65,8 +65,10 @@
 }
 
 - (IBAction)toggleClusteringButtonPressed:(UIBarButtonItem *)sender {
-    self.clusterMapView.clusteringEnabled = !self.clusterMapView.clusteringEnabled;
-    self.reclusterButton.enabled = self.clusterMapView.clusteringEnabled;
+    BOOL clusteringEnabled = !self.clusterMapView.clusteringEnabled;
+    self.clusterMapView.clusteringEnabled = clusteringEnabled;
+    self.reclusterButton.enabled = clusteringEnabled;
+    sender.title = clusteringEnabled ? @"Disable Clustering" : @"Enable Clustering";
     [self.clusterMapView cluster];
 }
 

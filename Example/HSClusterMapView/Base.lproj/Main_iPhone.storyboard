@@ -23,7 +23,7 @@
                                     <constraint firstAttribute="height" constant="44" id="mZy-4z-M7d"/>
                                 </constraints>
                                 <items>
-                                    <barButtonItem title="Enable Clustering" id="iur-eq-wAY">
+                                    <barButtonItem title="Disable Clustering" id="iur-eq-wAY">
                                         <connections>
                                             <action selector="toggleClusteringButtonPressed:" destination="2Su-xy-Llc" id="eN1-f3-YLw"/>
                                         </connections>
