@@ -20,11 +20,6 @@
  */
 @property (strong, nonatomic) NSMutableSet *clusterMarkers;
 
-/**
- * The renderer used for custom HSClusterMarker images
- */
-@property (strong, nonatomic) id<HSClusterRenderer> renderer;
-
 @end
 
 
