@@ -35,6 +35,11 @@
  */
 @property (nonatomic, assign) NSUInteger minimumMarkerCountPerCluster;
 
+/**
+ * The renderer used for custom HSClusterMarker images
+ */
+@property (strong, nonatomic) id<HSClusterRenderer> renderer;
+
 
 /**
  * Initializes an instance of HSClusterMapView with a specified HSClusterRenderer.
